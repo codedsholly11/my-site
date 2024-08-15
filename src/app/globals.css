@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+  
+  
+/* Start with the image container off-screen to the right */
+[data-aos="custom-slide-in"] {
+    opacity: 0;
+    transform: translateX(100vw); /* Start off-screen to the right */
+    transition: transform 1s ease-out, opacity 1s ease-out;
+  }
+  
+  /* When the animation is triggered */
+  [data-aos="custom-slide-in"].aos-animate {
+    opacity: 1;
+    transform: translateX(0); /* Slide to the original position */
+  }
+  

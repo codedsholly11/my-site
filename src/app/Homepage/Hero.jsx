@@ -1,5 +1,5 @@
 import React from 'react'
-import '../Homepage/hero.css'
+import './hero.css'
 import Image from 'next/image'
 import { FaProductHunt } from "react-icons/fa6";
 import { SlPeople } from "react-icons/sl";
